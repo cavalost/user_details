@@ -1,4 +1,4 @@
-package com.cavalos.springboot.ApiSpringBootMongoDB;
+package com.cavalos.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
