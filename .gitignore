@@ -35,8 +35,5 @@ build/
 # Maven
 log/
 target/
-mvnw
-mvnw.cmd
-.mvn
 
 application.properties
