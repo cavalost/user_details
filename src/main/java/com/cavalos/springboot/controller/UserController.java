@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cavalos.springboot.message.ResponseMessage;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -28,7 +29,7 @@ public class UserController {
             String message = "User has been added successfully with id = " + _user.getId();
 
             return new ResponseEntity<ResponseMessage>(new ResponseMessage(message, request.getRequestURI(),
-                    List.of(user)), HttpStatus.OK);
+                    Arrays.asList(user)), HttpStatus.OK);
         } catch(Exception e) {
             String message = "User has not been added";
             return new ResponseEntity<ResponseMessage>(new ResponseMessage(message, request.getRequestURI(),

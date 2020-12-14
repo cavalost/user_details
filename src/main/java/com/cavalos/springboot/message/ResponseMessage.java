@@ -1,8 +1,7 @@
 package com.cavalos.springboot.message;
 
 import com.cavalos.springboot.model.User;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ResponseMessage {
 
@@ -24,7 +23,7 @@ public class ResponseMessage {
     }
 
     public ResponseMessage(String message, String url) {
-        this(message, url, List.of());
+        this(message, url, Arrays.asList());
     }
 
     public void setMessage(String message) {
