@@ -26,8 +26,7 @@ Configuration is via the following environment variables:
 
 | Env var      | Example      | Purpose                   |
 | ------------ | ------------ | ------------------------- |
-| `MONGO_URI` | `mongodb+srv://<username>:<password>@uri` | To insert, retrieve, update and delete data to the DB
-| `MONGO_DB_NAME` | `users` | MongoDB database name
+| `SPRING_DATA_MONGODB_URI` | `mongodb+srv://<username>:<password>@uri` | To insert, retrieve, update and delete data to the DB
 
 ## Requirements
 
