@@ -33,10 +33,14 @@ Configuration is via the following environment variables:
 * JDK (version 8 or above)
 * Maven
 
+## Running the application locally
+```
+mvn spring-boot:run
+```
+
 ## Endpoints
 
-Register a User:
-    * https://users-details.herokuapp.com/api/user/add
+* Add a User: /api/user/add
 
     * Body
         {            
@@ -48,12 +52,9 @@ Register a User:
             "jobTitle": ""
         }
         
-Display User details:        
-* https://users-details.herokuapp.com/api/user/display/{id}
+* Display a User: /api/user/display/{id}
 
-Update User details:        
-* https://users-details.herokuapp.com/api/user/update/{id}
+* Update a User: /api/user/update/{id}
 
-Delete User details:        
-* https://users-details.herokuapp.com/api/user/delete/{id}
+* Delete a User: /api/user/delete/{id}
 
