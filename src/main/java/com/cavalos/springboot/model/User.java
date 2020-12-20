@@ -1,5 +1,8 @@
 package com.cavalos.springboot.model;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -8,9 +11,19 @@ public class User {
 
     @Id
     private String id;
+
+    @NotBlank
     private String fullName;
+
+    @NotBlank
+    @Size(max = 40)
+    @Email
     private String email;
+
+    @NotBlank
+    @Size(max = 20)
     private String password;
+
     private String phoneNumber;
     private String department;
     private String jobTitle;
