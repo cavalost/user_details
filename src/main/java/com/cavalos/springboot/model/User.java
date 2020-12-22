@@ -13,6 +13,10 @@ public class User {
     private String id;
 
     @NotBlank
+    @Size(max = 20)
+    private String username;
+
+    @NotBlank
     private String fullName;
 
     @NotBlank
@@ -28,7 +32,8 @@ public class User {
     private String department;
     private String jobTitle;
 
-    public User(String fullName, String email, String password, String phoneNumber, String department, String jobTitle) {
+    public User(String username, String fullName, String email, String password, String phoneNumber, String department, String jobTitle) {
+        this.username = username;
         this.fullName = fullName;
         this.email = email;
         this.password = password;
@@ -43,6 +48,14 @@ public class User {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getFullName() {
