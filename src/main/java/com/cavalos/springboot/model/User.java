@@ -4,7 +4,11 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Document(collection = "users")
 public class User {
@@ -31,6 +35,9 @@ public class User {
     private String phoneNumber;
     private String department;
     private String jobTitle;
+
+    @DBRef
+    private Set<Role> roles = new HashSet<>();
 
     public User(String username, String fullName, String email, String password, String phoneNumber, String department, String jobTitle) {
         this.username = username;
