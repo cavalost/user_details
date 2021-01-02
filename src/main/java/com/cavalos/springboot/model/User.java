@@ -112,4 +112,12 @@ public class User {
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
 }
