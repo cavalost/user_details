@@ -1,4 +1,4 @@
-package payload.response;
+package com.cavalos.springboot.payload.response;
 
 import java.util.List;
 
