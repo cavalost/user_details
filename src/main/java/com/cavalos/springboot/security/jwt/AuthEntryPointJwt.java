@@ -1,4 +1,4 @@
-package security.jwt;
+package com.cavalos.springboot.security.jwt;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

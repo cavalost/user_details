@@ -1,4 +1,4 @@
-package payload.request;
+package com.cavalos.springboot.payload.request;
 
 import javax.validation.constraints.NotBlank;
 

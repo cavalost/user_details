@@ -1,4 +1,4 @@
-package security.services;
+package com.cavalos.springboot.security.services;
 
 import com.cavalos.springboot.model.User;
 import com.cavalos.springboot.repository.UserRepository;

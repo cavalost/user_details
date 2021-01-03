@@ -1,12 +1,12 @@
-package security.jwt;
+package com.cavalos.springboot.security.jwt;
 
+import com.cavalos.springboot.security.services.UserDetailsImpl;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
-import security.services.UserDetailsImpl;
 import io.jsonwebtoken.*;
 import java.util.Date;
 
